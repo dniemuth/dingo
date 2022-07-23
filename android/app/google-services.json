@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "146387819641",
+    "firebase_url": "https://spell-cards-fa177.firebaseio.com",
+    "project_id": "spell-cards-fa177",
+    "storage_bucket": "spell-cards-fa177.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146387819641:android:3277d6ead63937c39588a8",
+        "android_client_info": {
+          "package_name": "com.example.dingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146387819641-hop5ll8doks411rhsbgo3k8tknegvcjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxCQdyWqWr5fgdNKYEsOVAy2mx1zShXNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146387819641-hop5ll8doks411rhsbgo3k8tknegvcjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146387819641:android:863e75e28efaa1d4",
+        "android_client_info": {
+          "package_name": "gg.spellcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146387819641-hop5ll8doks411rhsbgo3k8tknegvcjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxCQdyWqWr5fgdNKYEsOVAy2mx1zShXNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146387819641-hop5ll8doks411rhsbgo3k8tknegvcjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
