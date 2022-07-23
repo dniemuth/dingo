@@ -46,6 +46,7 @@ class SignInPage extends StatelessWidget {
                               alignLabelWithHint: true,
                               border: InputBorder.none,
                             ),
+                            style: TextStyle(color: Theme.of(context).colorScheme.onTertiary),
                             validator: (value) {
                               if (value!.isEmpty || !value.contains('@')) {
                                 return 'Invalid email!';
@@ -73,6 +74,7 @@ class SignInPage extends StatelessWidget {
                               alignLabelWithHint: true,
                               border: InputBorder.none,
                             ),
+                            style: TextStyle(color: Theme.of(context).colorScheme.onTertiary),
                           ),
                         ),
                         Container(
