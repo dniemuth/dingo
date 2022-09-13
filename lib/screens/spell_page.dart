@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/spell_page_metadata.dart';
 import '../widgets/spell_page_title.dart';
+import '../widgets/spell_page_footer.dart';
+import '../widgets/spell_page_body.dart';
 
 class SpellPage extends StatelessWidget {
   final Map _spell;
@@ -20,6 +22,16 @@ class SpellPage extends StatelessWidget {
                   height: 36,
                 ),
                 SpellPageMetadata(_spell),
+                Divider(
+                  color: Theme.of(context).colorScheme.onBackground,
+                  height: 36,
+                ),
+                SpellPageBody(_spell),
+                Divider(
+                  color: Theme.of(context).colorScheme.onBackground,
+                  height: 36,
+                ),
+                SpellPageFooter(_spell),
                 Divider(
                   color: Theme.of(context).colorScheme.onBackground,
                   height: 36,

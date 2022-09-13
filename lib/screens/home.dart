@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 
 import '../widgets/search_box.dart';
 import '../widgets/spell_list.dart';
+import '../widgets/filter_dialog.dart';
 import '../providers/auth_provider.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -21,42 +22,48 @@ class MyHomePage extends StatelessWidget {
 
       return Scaffold(
         appBar: AppBar(
-          systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent),
-          backgroundColor: Theme.of(context).colorScheme.surface,
-          foregroundColor: Theme.of(context).colorScheme.onSurface,
-          leading: IconButton(icon: const Icon(Icons.menu), tooltip: 'Menu', onPressed: () { print('Open Menu'); }),
-          title: SearchBox(),
-          titleSpacing: 0,
-          // title: TextField(
-          //   decoration: const InputDecoration(
-          //     hintText: 'Search...',
-          //     hintStyle: TextStyle(
-          //       color: Color(0xffA7A7A7),
-          //       fontSize: 18,
-          //       fontStyle: FontStyle.italic,
-          //     ),
-          //     border: InputBorder.none,
-          //   ),
-          //   style: TextStyle(
-          //     color: Theme.of(context).colorScheme.onSurface
-          //   ),
-          // ),
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.tune),
-              tooltip: 'Set Options',
-              onPressed: () {
-                print('Show Options');
-              },
-            ),
-             IconButton(
-              icon: const Icon(Icons.logout),
-              tooltip: 'Log Out',
-              onPressed: () {
-                auth.signOut();
-              },
-            )
-          ]),
+            systemOverlayStyle: SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent),
+            backgroundColor: Theme.of(context).colorScheme.surface,
+            foregroundColor: Theme.of(context).colorScheme.onSurface,
+            leading: IconButton(
+                icon: const Icon(Icons.menu),
+                tooltip: 'Menu',
+                onPressed: () {
+                  print('Open Menu');
+                }),
+            title: SearchBox(),
+            titleSpacing: 0,
+            // title: TextField(
+            //   decoration: const InputDecoration(
+            //     hintText: 'Search...',
+            //     hintStyle: TextStyle(
+            //       color: Color(0xffA7A7A7),
+            //       fontSize: 18,
+            //       fontStyle: FontStyle.italic,
+            //     ),
+            //     border: InputBorder.none,
+            //   ),
+            //   style: TextStyle(
+            //     color: Theme.of(context).colorScheme.onSurface
+            //   ),
+            // ),
+            actions: <Widget>[
+              IconButton(
+                icon: const Icon(Icons.tune),
+                tooltip: 'Set Options',
+                onPressed: () {
+                  print('Show Options');
+                  showDialog<void>(context: context, builder: (context) => FilterDialog());
+                },
+              ),
+              IconButton(
+                icon: const Icon(Icons.logout),
+                tooltip: 'Log Out',
+                onPressed: () {
+                  auth.signOut();
+                },
+              )
+            ]),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
